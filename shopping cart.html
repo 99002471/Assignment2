@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shopping Cart </title>
+    <style>
+        body
+        {
+            background-color: aliceblue;
+        }
+         button
+         {
+                background-color: lightblue;
+                width: 75px;
+                height: 50px;
+                color:blue;
+            }
+    </style>
+    <script src="CommonFunctions.js"></script>
+    <script>
+        function inList()
+        {
+            const firstval = $get("name").value;
+            const result = addin(firstval);
+            $get("spResult").innerText = result;
+
+        }
+    </script>
+</head>
+<body>
+    
+    <p>Enter the name of item : <input type="String" id="name"></p>
+    <hr>
+    <script>
+    </script>
+        <button onclick="inList()">Add to cart</button>
+        <p>
+            The Result:
+            <span id="spResult"></span>
+            <div>
+                <ul id="lsData">
+            </ul>
+            </div>
+            
+        </p>
+</body>
+</html>
